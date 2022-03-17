@@ -1,0 +1,11 @@
+<header>
+    <%- include('./partials/encabezado.ejs') %>
+</header>
+<body>
+    <div>
+        <h2 style="color: blue">Lista de Productos Ingresados</h2>
+        <%- include('./partials/tabla.ejs', productos) %>
+    </div>
+    <a href="/" class="btn btn-primary">Volver al Formulario de Ingreso</a>
+</body>
+<%- include('./partials/pie.ejs') %>

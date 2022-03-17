@@ -1,0 +1,34 @@
+<header>
+    <%- include('./partials/encabezado.ejs') %>
+</header>
+<body>
+  <div class="container mt-3">
+    <div class="jumbotron">
+      <h1 style="color: blue">Ingrese Producto</h1>
+      <h7>*(En "Imagen", incluya la ruta completa del URL comenzando con http...etc.)</h7>
+      <br/><br/><br/>
+
+      <form action="/productos" method="post">
+        <div class="form-group">
+          <label for="title"><b>Nombre</b></label>
+          <input id="title" class="form-control" type="text" name="title" />
+        </div>
+
+        <div class="form-group">
+          <label for="price"><b>Precio</b></label>
+          <input id="price" class="form-control" type="number" name="price"  />
+        </div>
+
+        <div class="form-group">
+          <label for="thumbnail"><b>URL de Imagen</b></label>
+          <input id="thumbnail" class="form-control" type="text" name="thumbnail" />
+        </div>
+
+        <button class="btn btn-success mt-3 mb-5">Ingresar</button>
+      </form>
+      <a href="/productos" class="btn btn-primary">Ver Lista de Productos</a>
+    </div>    
+  </div>
+  <h5 style=text-align:center> Emmanuel Perez --- Desafio 5 / EJS --- Marzo/2022 </h5>
+</body>
+<%- include('./partials/pie.ejs') %>

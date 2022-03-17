@@ -1,0 +1,27 @@
+html 
+  head
+    </br>
+    <h3 style="color: blue">Ingrese un Producto </h3>
+    <h5>*(En "Imagen", incluya la ruta completa del URL comenzando con http...etc.) </h5>
+    </br>
+    body     
+      form(action="/productos" method="post")
+        label= " Nombre: "
+        input( type="text" name="title" id="title" style='margin-left:50px;')
+        </br></br>
+        label= " Precio: "
+        input(type="number" name="price" id="price" style='margin-left:62px;')
+        </br></br>
+        label= " Imagen (*URL): " 
+        input(type="text" name="thumbnail" id="thumbnail")
+        </br></br>
+        button(type="submit" style='margin-left:210px;')="Ingresar" 
+      form
+      div
+        </br></br>
+        =' '
+         a(href="/productos" style='margin-left:85px;') 
+          button="Ver Lista de Productos"
+        </br></br>
+        <h5> &nbsp&nbsp Emmanuel Perez ---- Desafío 5 / PUG ---- Marzo/2022</h5>
+      

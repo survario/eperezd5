@@ -1,0 +1,34 @@
+html 
+  head
+   </br>
+   <h3 style="color: blue">Lista de Productos Ingresados</h3>
+   </br>
+    body
+    if (productos.length > 0)
+      table
+        thead
+          tr
+            th=" - Nombre"
+            th=""   
+            th="-"
+            th=" Precio "
+            th="-"
+            th=" Imagen "
+        tbody
+          each producto in productos
+            tr
+              td= producto.title
+              td=""
+              td="$"
+              td= producto.price
+              td=""
+              td 
+                img(src=producto.thumbnail style='width:40px; height:40px;')
+      </br></br>
+      a(href="/") 
+        button="Volver al Formulario de Ingreso"
+    else
+      div="No hay productos para mostrar"
+      </br></br>
+      a(href="/") 
+        button="Volver al Formulario de Ingreso"
